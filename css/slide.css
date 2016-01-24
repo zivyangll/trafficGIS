@@ -1,0 +1,80 @@
+
+
+.info {
+    width: 390px;
+    color: #0d62bb;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 1px;
+    padding-bottom: 10px;
+    font-size: 0.85em;
+    border-bottom: 1px #dedede solid;
+    background: url(../img/jinri/point.png) no-repeat;
+}
+.info.span{
+    margin-left:25px;
+}
+
+
+
+img {
+    border: 0;
+}
+.ck-slide ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.ck-slide {
+    width: 390px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chartpara{
+    width: 390px;
+    height: 360px;
+    overflow: visible;
+    margin-top:-50px
+}
+
+.ck-slide ul.ck-slide-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+.ck-slide ul.ck-slide-wrapper li {
+    position: absolute; margin-top:0px;
+}
+.ck-slide ul.ck-slide-wrapper li a{
+    /*a标签是行内元素，宽高对a标签不起作用，这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+    line-height:0px;
+    display:block;
+}
+.ck-slide .ck-prev, .ck-slide .ck-next {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 35px;
+    height: 70px;
+    margin-top: -35px;
+    border-radius: 3px;
+    opacity: .15;
+    background: red no-repeat;
+    text-indent: -9999px;
+    transition: opacity .2s linear 0s;
+}
+.ck-slide .ck-prev {
+    left: -4px;
+    background: url(../img/jinri/arrow-left.png) #000 50% no-repeat;
+}
+.ck-slide .ck-next {
+    right: 14px;
+    background: url(../img/jinri/arrow-right.png) #000 50% no-repeat;
+}
+

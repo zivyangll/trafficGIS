@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/jinrishuju.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <script src="../js/lib/jquery.js"></script>
+    <script src="../js/jinri/jinrishuju.js"></script>
+    <script src="../js/jinri/timeline.js"></script>
+    <script src="../js/jinri/jinriajax.js"></script>
+    <!---->
+</head>
+<body>
+<div id="allmap"></div>
+<!--星星闪烁-->
+<div class="pulse"></div>
+<a href="#" class="button addmap"></a>
+<!--地图上所有浮层-->
+<div id="overMap">
+    <!--左侧菜单-->
+    <div id="left">
+        <!--logo-->
+        <div id="logo"></div>
+        <div id="baseInfo">
+            <div class="info"><span>基本信息</span></div>
+        </div>
+        <div id="time">
+            <span>2015年12月14日</span>
+            <span>星期一</span>
+            <span>阵雨</span>
+            <span>6℃</span>
+            <span>轻度污染</span>
+        </div>
+        <div id="layerSelect">
+            <div class="info"><span>图层选择</span></div>
+        </div>
+
+        <div id="layer">
+            <div class="oneLayer">
+                <img src="../img/jinri/tuceng/0_n.png"/>
+                <p>实有事故</p>
+            </div>
+            <div class="oneLayer">
+                <img src="../img/jinri/tuceng/1_n.png"/>
+                <p>实有违法</p>
+            </div>
+            <div class="oneLayer">
+                <img src="../img/jinri/tuceng/2_n.png"/>
+                <p>实有警力</p>
+            </div>
+        </div>
+        <div id="tongjiInfo">
+            <div class="info"><span>实时统计数据</span></div>
+        </div>
+        <div id="tongjiMenu">
+            <div>实有事故</div>
+            <div>实有违法</div>
+            <div>实有警力</div>
+        </div>
+        <div id="tongjiList">
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">今日事故（起）</div>
+            </div>
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">简易事故</div>
+            </div>
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">伤人事故</div>
+            </div>
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">死亡事故</div>
+            </div>
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">受伤事故</div>
+            </div>
+            <div class="oneList">
+                <div class="num">0</div>
+                <div class="descrip">死亡事故</div>
+            </div>
+        </div>
+        <div id="shiduantongji">
+            <div class="info"><span>实时事故时段统计</span></div>
+        </div>
+        <div id="shiduanGraph">
+            <iframe src="shiduanIframe.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div id="quduanGraph">
+            <iframe src="quduanIframe.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <!--右侧时间轴-->
+    <div id="timeline">
+        <div class="todayTime">
+            <div class="timecircle"></div>
+            <div class="timecircle2"></div>
+            <div class="time">2015-12-14</div>
+        </div>
+        <div class="tempTimeline">
+            <div class="oneTime">
+                <div class="all">
+                    <div class="clocktime">
+                        <div class="time">13:40</div>
+                    </div>
+                    <div class="clockline">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="jiantou">
+                        <div class="bot"></div>
+                        <div class="top"></div>
+                    </div>
+                    <div class="bubble">
+                        <div class="test">
+                            <div class="title">武汉市醉驾中心查处的第一人 被同一民警再次查获</div>
+                            <div class="img"><img src="../img/308x154.png"/></div>
+                            <div class="content">交管大队在辖区内查获一名酒驾司机，。当晚他竟被同一民警再次查获</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--三个主菜单  -->
+    <div id="rightMiddle">
+        <a href="./yitu.html"><div class='rightMiddleTop'></div></a>
+        <a href="./yiku.html"><div class='rightMiddleMid'></div></a>
+        <a href="./kaifa.html"><div class='rightMiddleBot'></div></a>
+        <a href="./jinri.html"><div class='rightMiddleBotBot'></div></a>
+    </div>
+</div>
+</body>
+
+<img id="logoimg" src="../img/liantu.png"  style="position:absolute;width:100px;left:10px;"/>
+<script>
+    $('#logoimg').css('top',document.body.scrollHeight);
+</script>
+</html>

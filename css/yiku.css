@@ -1,0 +1,1258 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; }
+
+body {
+    width: 100%;
+    height: 100%; }
+
+#yikuTitle {
+    height: 70px;
+    width: 100%;
+    min-width:1210px;
+    position: absolute;
+    top: 0;
+    lfet: 0;
+    background: url("../img/yiku/logo_1ku.png") no-repeat fixed #1268ca; }
+
+#yikuTop {
+    position: absolute;
+    top: 65px;
+    height: 550px;
+    width: 100%;
+    min-width:1210px;
+    text-align: center;
+    background-image: url("../img/yiku/bg.png");
+    background-repeat: no-repeat;
+    background-color: #132650;
+    background-position: center; }
+
+#yikuplaceholder{
+    min-width:1210px;
+    height: 550px;
+    width: 93%;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+#yikupulseplaceholder{
+    width: 437px;
+    height: 514px;
+    background-image: url("../img/yiku/map.png");
+    position: absolute;
+    right:7%;
+    top:18px;
+}
+
+/* 地图闪烁 */
+.pulse {
+    background: #ffc506;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin: 11px 0px 0px -12px;
+    z-index: 2; }
+
+.pulse:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: -13px 0 0 -20px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    box-shadow: 0 0 8px 1px #ffc506 inset; }
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0; }
+    80% {
+        opacity: 1; }
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0; } }
+#yikuSplit {
+    position: absolute;
+    top: 620px;
+    height: 40px;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+#yikuSplit span {
+    line-height: 40px;
+    float: left;
+    font-size: 22px;
+    font-style: normal; }
+#yikuSplit .split {
+    width: 940px;
+    margin-left: 200px;
+    height: 0px;
+    border: #d8d8d8 solid 1px;
+    margin-top: 20px; }
+
+#yikuContent {
+    position: absolute;
+    top: 670px;
+    height: 200px;
+    width: 1210px;
+    text-align: center;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /* 实现shtire container, keeps perspective */
+    /*  UPDATED! flip the pane when hovered */
+    /* flip speed goes here */
+    /* hide back of pane during swap */
+    /*  UPDATED! front pane, placed above back */
+    /* back, initially hidden pane */
+    /*
+        Some vertical flip updates
+    */ }
+#yikuContent .oneContent {
+    width: 400px;
+    height: 278px;
+    float: left;
+    border: solid 1px #dcdcdc; }
+#yikuContent .imgFont {
+    margin-top: 40px; }
+#yikuContent .pFont {
+    margin-top: 20px;
+    font-size: 22px;
+    font-style: normal; }
+#yikuContent .pBack {
+    position: absolute;
+    top: 40px;
+    left: 160px;
+    font-size: 22px;
+    font-style: normal; }
+#yikuContent .flip-container {
+    float: left;
+    perspective: 1000;
+    transform-style: preserve-3d; }
+#yikuContent .flip-container:hover .back {
+    transform: rotateY(0deg); }
+#yikuContent .flip-container:hover .front {
+    transform: rotateY(180deg); }
+#yikuContent .flip-container, #yikuContent .front, #yikuContent .back {
+    width: 400px;
+    height: 278px; }
+#yikuContent .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative; }
+#yikuContent .front, #yikuContent .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0; }
+#yikuContent .front {
+    z-index: 2;
+    transform: rotateY(0deg); }
+#yikuContent .back {
+    transform: rotateY(-180deg); }
+#yikuContent .vertical.flip-container {
+    position: relative; }
+#yikuContent .vertical .back {
+    transform: rotateX(180deg); }
+#yikuContent .vertical.flip-container:hover .back {
+    transform: rotateX(0deg); }
+#yikuContent .vertical.flip-container:hover .front {
+    transform: rotateX(180deg); }
+
+#rightMiddle {
+    position: absolute;
+    top: 150px;
+    right: 4px; }
+#rightMiddle div {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    z-index:10000;
+    cursor: pointer; }
+#rightMiddle .rightMiddleTop {
+    width: 44px;
+    top: 0;
+    background: url(../img/menu/1tu.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleMid {
+    width: 44px;
+    top: 46px;
+    background: url(../img/menu/1ku.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBot {
+    width: 44px;
+    top: 92px;
+    background: url(../img/menu/kaifa.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBotBot {
+    width: 44px;
+    top: 138px;
+    background: url(../img/menu/jrsj.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleTop:hover {
+    width: 200px;
+    top: 0;
+    background: url(../img/menu/1tu_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleMid:hover {
+    padding-left: 156px;
+    background: url(../img/menu/1ku_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBot:hover {
+    padding-left: 156px;
+    background: url(../img/menu/1yun_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBotBot:hover {
+    padding-left: 156px;
+    background: url(../img/menu/jrsj_c.png) no-repeat 0px 0px; }
+#dataResourceTotalDiv {
+    position: absolute;
+    top: 60px;
+    left: 7%;
+    background-color: rgba(6, 17, 37, 0.7);
+    /*  background-color: #061125;*/
+    /*  opacity: 0.7;
+      filter: alpha(Opacity=70);*/
+    width: 490px;
+    height: 370px;
+    color: #FFF;
+    text-align: center;
+    padding: 30px 30px; }
+#dataResourceTotalDiv #titleFordataRresourceTotalDiv {
+    font-size: 1.5em;
+    margin-bottom: 20px; }
+#dataResourceTotalDiv .clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
+#dataResourceTotalDiv #nineInfoDiv {
+    font-family: "Microsoft YaHei";
+    color: #FFF; }
+#dataResourceTotalDiv #nineInfoDivOne {
+    float: left;
+    text-align: left; }
+#dataResourceTotalDiv #nineInfoDivTwo {
+    float: right;
+    text-align: left; }
+#dataResourceTotalDiv #nineInfoDiv p {
+    font-size: 0.95em;
+    margin: 0px;
+    padding: 8px 0; }
+#dataResourceTotalDiv #nineInfoDivOne span, #dataResourceTotalDiv #nineInfoDivTwo span {
+    font-size: 1.5em; }
+#dataResourceTotalDiv #include {
+    text-align: left;
+    font-size: 0.95em; }
+#dataResourceTotalDiv .numberPlaceHolder {
+    background-color: #0880da;
+    height: 36px;
+    width: 30px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px; }
+#dataResourceTotalDiv .numberPlaceHolder1 {
+    background-color: #0880da;
+    height: 36px;
+    width: 30px;
+    float: left;
+    margin-right: 5px;
+    line-height: 36px; }
+#dataResourceTotalDiv #numberDisplayDiv {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 386px; }
+#dataResourceTotalDiv .numberPlaceHolderSpan {
+    background-image: url("../img/number1.png");
+    background-position: 0px 0px; }
+
+/*# sourceMappingURL=yiku.css.map */
+
+
+/*# Accident*/
+#numberDisplayAccidentDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayAccidentDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccidentDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccidentDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Accident1*/
+#numberDisplayAccident1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayAccident1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccident1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccident1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Accident2*/
+#numberDisplayAccident2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayAccident2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccident2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayAccident2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+
+/*# Irregularity*/
+#numberDisplayIrregularityDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayIrregularityDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayIrregularityDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayIrregularityDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Irregularity1*/
+#numberDisplayIrregularity1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayIrregularity1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayIrregularity1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayIrregularity1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Irregularity2*/
+#numberDisplayIrregularity2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayIrregularity2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayIrregularity2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayIrregularity2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+
+/*# Road*/
+#numberDisplayRoadDiv {
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayRoadDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayRoadDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayRoadDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Road1*/
+#numberDisplayRoad1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayRoad1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayRoad1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayRoad1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Road2*/
+#numberDisplayRoad2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayRoad2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayRoad2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayRoad2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+
+/*# Driver*/
+#numberDisplayDriverDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayDriverDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayDriverDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayDriverDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Driver1*/
+#numberDisplayDriver1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayDriver1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayDriver1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayDriver1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Driver2*/
+#numberDisplayDriver2Div {
+
+    position: absolute;
+    top: 204px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayDriver2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayDriver2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayDriver2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Car*/
+#numberDisplayCarDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCarDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCarDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCarDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Car*/
+#numberDisplayCarDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCarDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCarDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCarDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Car1*/
+#numberDisplayCar1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCar1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCar1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCar1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Car2*/
+#numberDisplayCar2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCar2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCar2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCar2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Company*/
+#numberDisplayCompanyDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCompanyDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCompanyDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCompanyDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Company1*/
+#numberDisplayCompany1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCompany1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCompany1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCompany1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Company2*/
+#numberDisplayCompany2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayCompany2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayCompany2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayCompany2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Parking*/
+#numberDisplayParkingDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayParkingDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayParkingDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayParkingDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*# Parking1*/
+#numberDisplayParking1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayParking1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayParking1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayParking1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*# Parking2*/
+#numberDisplayParking2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayParking2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayParking2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayParking2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+
+
+/*#Traffic*/
+#numberDisplayTrafficDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayTrafficDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayTrafficDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayTrafficDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*#Traffic1*/
+#numberDisplayTraffic1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayTraffic1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayTraffic1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayTraffic1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*#Traffic2*/
+#numberDisplayTraffic2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayTraffic2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayTraffic2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayTraffic2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/*#Police*/
+#numberDisplayPoliceDiv {
+
+    position: absolute;
+    top: 95px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayPoliceDiv .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayPoliceDiv .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayPoliceDiv .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*#Police1*/
+#numberDisplayPolice1Div {
+
+    position: absolute;
+    top: 151px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayPolice1Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayPolice1Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayPolice1Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+/*#Police2*/
+#numberDisplayPolice2Div {
+
+    position: absolute;
+    top: 207px;
+    left: 113px;
+    text-align: center;
+    width: 280px; }
+
+#numberDisplayPolice2Div .numberPlaceHolder {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 1px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+#numberDisplayPolice2Div .numberPlaceHolder1 {
+    background-color: #474b54;
+    height: 24px;
+    width: 19px;
+    float: left;
+    margin-right: 3px;
+    line-height: 36px;
+    border-radius: 3px;
+    padding-bottom: 5px;}
+
+#numberDisplayPolice2Div .numberPlaceHolderSpan {
+    margin-bottom: 100px;
+    color: #e1e1e1;
+    font-size: 1.3em;
+    font-style: normal;
+}
+

@@ -1,0 +1,1433 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/yiku.css"/>
+    <script src="../js/lib/jquery.js"></script>
+    <script src="../js/yiku.js"></script>
+</head>
+<body>
+<div id="logotext" style="position:absolute;width:95%;text-align:center;left:10px;">武汉联图时空信息科技有限公司</div>
+
+<div id="yikuTitle"></div>
+<div id="yikuTop">
+    <div id="yikuplaceholder">
+        <div  id="yikupulseplaceholder">
+            <div class='pulse'style="left: 220px; top: 150px;" ></div>
+            <div class='pulse'style="left: 350px; top: 160px;"></div>
+            <div class='pulse'style="left: 228px; top: 245px;"></div>
+            <div class='pulse'style="left: 203px; top: 257px;"></div>
+            <div class='pulse'style="left: 202px; top: 269px;"></div>
+            <div class='pulse'style="left: 192px; top: 255px;"></div>
+            <div class='pulse'style="left: 178px; top: 263px;"></div>
+            <div class='pulse'style="left: 166px; top: 276px;"></div>
+            <div class='pulse'style="left: 184px; top: 346px;"></div>
+            <div class='pulse'style="left: 124px; top: 360px;"></div>
+            <div class='pulse'style="left: 148px; top: 246px;"></div>
+            <div class='pulse'style="left: 218px; top: 293px;"></div>
+            <div class='pulse'style="left: 108px; top: 264px;"></div>
+        </div>
+        <!--大图上的数字-->
+        <div id="dataResourceTotalDiv">
+            <p id="titleFordataRresourceTotalDiv">全市交通数据资源总量（条）</p>
+
+            <div id="numberDisplayDiv" class="clearfix">
+
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder1 numberPlaceHolderSpan">
+                </div>
+
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder1 numberPlaceHolderSpan">
+                </div>
+
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder1 numberPlaceHolderSpan">
+                </div>
+
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+                <div class="numberPlaceHolder numberPlaceHolderSpan">
+                </div>
+
+            </div>
+
+            <div id="include">其中&nbsp :</div>
+            <div id="nineInfoDiv" class="clearfix">
+                <div id="nineInfoDivOne">
+                    <p>实有事故&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有道路&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有车辆&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有停车场&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有警力&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                </div>
+
+                <div id="nineInfoDivTwo">
+                    <p>实有违法&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有驾驶员&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有运输企业&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                    <p>实有交通设施&nbsp <span class="nineNumberPlaceHolderSpan"></span>条</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<div id="yikuSplit">
+    <span>一库数据监控统计</span>
+    <div class="split"></div>
+</div>
+<!--三个主菜单  -->
+<div id="rightMiddle">
+    <a href="./yitu.html"><div class='rightMiddleTop'></div></a>
+    <a href="./yiku.html"><div class='rightMiddleMid'></div></a>
+    <a href="./kaifa.html"><div class='rightMiddleBot'></div></a>
+    <a href="./jinri.html"><div class='rightMiddleBotBot'></div></a>
+</div>
+<div id="yikuContent">
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/1.png">
+                    <p class="pFont">实有事故</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有事故</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayAccidentDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayAccident1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayAccident2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/2.png">
+                    <p class="pFont">实有违法</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有违法</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayIrregularityDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayIrregularity1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayIrregularity2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/3.png">
+                    <p class="pFont">实有道路</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有道路</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayRoadDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayRoad1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayRoad2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/4.png">
+                    <p class="pFont">实有驾驶员</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有驾驶员</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayDriverDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayDriver1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayDriver2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/5.png">
+                    <p class="pFont">实有车辆</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有车辆</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayCarDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayCar1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayCar2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/6.png">
+                    <p class="pFont">实有运输企业</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有运输企业</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayCompanyDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayCompany1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayCompany2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/7.png">
+                    <p class="pFont">实有停车场</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有停车场</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayParkingDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayParking1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayParking2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/8.png">
+                    <p class="pFont">实有交通设施</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有交通设施</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayTrafficDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayTraffic1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayTraffic2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+            <div class="front">
+                <!-- 前面内容 -->
+                <div class="oneContent">
+                    <img class="imgFont" src="../img/yiku/9.png">
+                    <p class="pFont">实有警力</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="oneContent">
+                    <p class="pBack">实有警力</p>
+                    <img class="imgBack" src="../img/yiku/click.png">
+                    <div id="numberDisplayPoliceDiv">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayPolice1Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                    <div id="numberDisplayPolice2Div">
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+                        <div class="numberPlaceHolder1">
+                            <span class="numberPlaceHolderSpan"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $('#logotext').css("top",document.body.scrollHeight);
+</script>
+</body>
+</html>

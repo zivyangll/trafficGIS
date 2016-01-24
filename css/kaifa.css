@@ -1,0 +1,152 @@
+﻿body, button, input, select, textarea { font: 12px/1.125 Arial,Helvetica,sans-serif; }
+
+.pbody{
+    width:100%;
+    height:auto;
+}
+.ptop{
+    position:relative;
+    width:100%;
+    height:350px;
+    overflow:hidden;
+}
+
+img{border:0;}
+.slideInner{height:700px;position:relative;left:0;margin-left:0;}
+.slideInner a{display:block;height:700px;background-size:cover;background-position:center center;position:relative;text-align:center;z-index:1;}
+.sdbx{
+    position:relative;
+    width:1200px;
+    height:350px;
+    margin:0 auto;
+}
+.sdbx .info1{
+    float:left;
+    width:400px;
+    margin-left:30px;
+    height:350px;
+    padding: 30px;
+}
+.sdbx .img1{
+    float:right;
+    width:665px;
+    height:350px;
+}
+.sdbx .title{
+    float:left;
+    width:505px;
+    height:140px;
+    line-height:150px;
+    font-family:微软雅黑;
+    font-size:48px;
+    color:#fff;
+}
+.sdbx .info{
+    float:left;
+    width:505px;
+    height:210px;
+    line-height:36px;
+    font-family:微软雅黑;
+    font-size:16px;
+    text-align:left;
+    color:#fff;
+}
+.sdbx img{
+    padding: 30px 20px;
+    float:right;
+}
+.pcenter{
+    width:1200px;
+    margin: auto;
+
+}
+
+.nav{width:1400px;position:relative;left:50%;margin-left:-700px;display:none;top:180px;}
+.nav a{display:block;width:28px;height:80px;opacity:.2;z-index:9;}
+.nav a.prev{position:absolute;left:0px;top:-350px;margin-top:-58px;background:url(../img/kaifa/ban_pre.png) no-repeat;}
+.nav a.next{position:absolute;right:0px;top:-350px;margin-top:-58px;background:url(../img/kaifa/ban_next.png) no-repeat;}
+.navListBox{position:absolute;left:50%;top:320px;z-index:99;}
+.navListBox li{width:12px;height:12px;float:left;margin-left:5px;border-radius:50%;overflow:hidden;}
+.navListBox li:first-child{margin-left:0;}
+.navListBox li a{display:block;width:100%;height:100%;border-radius:50%;background-color:#fff;box-shadow:0 0 5px #666 inset;}
+.navListBox li a.active{background-color:#55ddff;}
+
+.router_display { background: rgb(233, 233, 233) url("../img/kaifa/bg_route_display.png") no-repeat scroll center 0px; }
+.router_display .display_wrapper { width: 1000px; margin: 0px auto; overflow: hidden; }
+.router_display .display_wrapper_inner { width: 1000px; height: 165px; padding: 18px 0px; overflow: hidden; }
+.router_display .router_box_container { float: left; text-align: center; }
+.router_display .router_regular { width: 242px; padding: 0px 8px 0px 0px; }
+.router_display .router_promote { width: 240px; padding: 1px 9px 1px 1px; }
+.router_display .router_box_link { display: block; position: relative; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.router_display .router_regular .router_box_link { width: 236px; padding: 2px; border: 1px solid rgb(204, 204, 204); }
+.router_display .router_promote .router_box_link { width: 225px; padding: 2px; }
+.router_display .router_box_link_disabled { display: block; position: relative; width: 236px; padding: 2px; border: 1px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.router_display .link_img_container { display: block; padding-top: 9px; }
+.router_display .router_promote .link_img_container { background: rgb(206, 231, 245) none repeat scroll 0% 0%; }
+.router_display .link_img { width: 200px; height: 150px; background: transparent url("../img/kaifa/home_route.png") no-repeat scroll 0% 0%; }
+.router_display .link_img_mobile { background-position: 0px -150px; }
+.router_display .link_img_web { background-position: -200px -150px; }
+.router_display .link_img_business { background-position: -400px -150px; }
+.router_display .link_img_promote { background-position: -600px -150px; }
+.router_display .mark_unavailable { position: absolute; width: 240px; height: 163px; background: rgb(224, 221, 221) none repeat scroll 0% 0%; opacity: 0.4; left: 0px; top: 0px; }
+.router_display .router_regular .router_box_link:hover { background: rgb(173, 213, 237) none repeat scroll 0% 0%; }
+.router_display .router_regular .router_box_link:hover .link_img_container { padding-top: 8px; border: 1px solid rgb(173, 213, 237); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.router_display .router_box_link:hover .link_img_mobile { background-position: 0px -150px; }
+.router_display .router_box_link:hover .link_img_web { background-position: -200px -150px; }
+.router_display .router_box_link:hover .link_img_business { background-position: -400px -150px; }
+.router_display .router_box_link:hover .link_img_promote { background-position: -600px -150px; }
+
+
+.list_display {font-family: Helvetica,Tahoma,Arial,"Microsoft YaHei",SimSun,"宋体",Heiti,"黑体",sans-serif; width: 1000px; border: 1px solid rgb(233, 235, 235); background-color: rgb(255, 255, 255); margin: 20px auto; }
+.list_display .inner { padding: 48px; }
+.list_display .item_icon { display: inline-block; width: 36px; height: 32px; background-image: url("../img/kaifa/new_icons.png"); }
+.list_display .persons_icon { background-position: -50px top; }
+.list_display .taste_btn { width: 130px; height: 42px; background-position: 0px -50px; }
+.list_display .item_btn { margin-top: 10px; }
+.list_display .item1 { padding: 100px 0px 50px 480px; background-image: url("../img/kaifa/section1.png"); background-repeat: no-repeat; background-position: center bottom; }
+.list_display .item2 { padding: 100px 0px 50px; background-image: url("../img/kaifa/section2.png"); background-repeat: no-repeat; background-position: center bottom; }
+.list_display .item3 { padding: 100px 0px 50px 480px; background-image: url("../img/kaifa/section3.png"); background-repeat: no-repeat; background-position: center bottom; }
+.list_display .item4 { padding: 100px 0px 50px; background-image: url("../img/kaifa/section4.png"); background-repeat: no-repeat; background-position: center bottom; }
+.list_display .item_title2 { font-size: 32px; font-weight: bold; line-height: 50px; color: rgb(51, 51, 51); }
+.list_display .item_intro { margin-top: 10px; width: 370px; font-size: 20px; color: rgb(153, 153, 153); line-height: 30px; }
+
+
+#rightMiddle {
+    position: absolute;
+    top: 150px;
+    right: 4px; }
+#rightMiddle div {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    z-index:10000;
+    cursor: pointer; }
+#rightMiddle .rightMiddleTop {
+    width: 44px;
+    top: 0;
+    background: url(../img/menu/1tu.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleMid {
+    width: 44px;
+    top: 46px;
+    background: url(../img/menu/1ku.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBot {
+    width: 44px;
+    top: 92px;
+    background: url(../img/menu/kaifa.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBotBot {
+    width: 44px;
+    top: 138px;
+    background: url(../img/menu/jrsj.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleTop:hover {
+    width: 200px;
+    top: 0;
+    background: url(../img/menu/1tu_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleMid:hover {
+    padding-left: 156px;
+    background: url(../img/menu/1ku_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBot:hover {
+    padding-left: 156px;
+    background: url(../img/menu/1yun_c.png) no-repeat 0px 0px; }
+#rightMiddle .rightMiddleBotBot:hover {
+    padding-left: 156px;
+    background: url(../img/menu/jrsj_c.png) no-repeat 0px 0px; }

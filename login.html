@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="description" content=""/>
+    <title></title>
+    <script type="text/javascript" src="./js/lib/jquery.js"></script>
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/login.js"></script>
+</head>
+
+<body>
+<div id="logotext" style="position:absolute;width:95%;text-align:center;left:10px;">武汉联图时空信息科技有限公司</div>
+
+<div id="tHeader">
+    <div id="logoPlaceHolder">
+        <img src="./img/login/logo_dl.png" id="logoImg"/>
+    </div>
+</div>
+<div id="mainPart">
+
+    <div id="photoSwitchBox">
+        <div id="photoPlaceHolder">
+
+            <div id="menuPhotoChange">
+                <img src="./img/login/menu1.png" alt="" id="menupicPlaceHolder"/>
+            </div>
+
+            <div class="contentPlaceHolder" id="contentPH1" style="display:block;">
+                基于PGIS地图数据，以“9+N”空间数据库为基础，为交管应用提供空间查询服务、时空统计分析服务、地理标注服务和专题图服务，形成多关键字、多属性、多层次灵活展示框架，支持图层自由配置，实现“9+N”数据PGIS一图展示。
+            </div>
+            <div class="contentPlaceHolder" id="contentPH2" style="display:none;">
+                汇集整合“九实”数据和其他交管业务数据，构建“9+N”空间数据库，实现一库存储与更新，为交管应用提供基础空间数据服务。
+            </div>
+            <div class="contentPlaceHolder" id="contentPH3" style="display:none;">
+                依托武汉交管私有云，构建并提供各类时空标注、查询、统计分析等接口服务，为全局“八大系统”和其他业务系统提供支撑。
+            </div>
+
+            <div id="mainPhotoChange">
+                <img src="./img/login/pic1.png" alt="" id="mainpicPlaceHolder"/>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rightMainPart">
+        <!--登录div-->
+        <div id="LoginBox">
+            <div id="LoginBoxLabel">
+                <div id="forUserLoginLabel"></div>
+                <span id="userLoginLabel">用户登录</span>
+            </div>
+            <form id="formForLogin" target="_blank" method="post" onSubmit="return false">
+                <div id="loginFrame">
+
+                    <div id="infoInput">
+                        <!--用户名-->
+                        <div class="loginFormInput" id="idInputLFrame">
+                            <img src="./img/login/user.png" class="LoginImg"/>
+                            <input type="text" value="" name="loginID" maxlength="50" id="loginIdInput" title="请输入用户名"
+                                   class="loginformIpt" autocomplete="off" onBlur="checkUserAndnoLabel1(this)"
+                                   onKeyDown="noLabel2(this)" placeholder="用户名">
+                        </div>
+
+                        <!--密码-->
+                        <div class="loginFormInput" id="pwdInputFrame">
+                            <img src="./img/login/key.png" class="LoginImg"/>
+                            <input type="password" name="loginPassword" id="loginPwdInput" title="请输入密码"
+                                   class="loginformIpt" placeholder="密码">
+                        </div>
+                    </div>
+
+                    <div id="checkrememberUserBox">
+                        <input id="checkForRemenberPsw" type="checkbox" node-type="savestate" checked="checked">
+                        <span id="rememberPsw">记住密码</span>
+                    </div>
+
+                    <!--登录按钮-->
+                    <div id="FormforLoginBtn">
+                        <button type="submit" id="loginBtn">口令登录</button>
+                        <button type="submit" id="certiLoginBtn">证书登录</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div id="dotSwitchBar">
+            <ul>
+                <li>
+                    <a class="selectedDot dotSwitch" href="###" id="dotSwitcha"></a>
+                </li>
+                <li>
+                    <a class="unselectedDot dotSwitch" href="###" id="dotSwitchb"></a>
+                </li>
+                <li>
+                    <a class="unselectedDot dotSwitch" href="###" id="dotSwitchc"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $('#logotext').css("top",document.body.scrollHeight);
+</script>
+</body>
+</html>

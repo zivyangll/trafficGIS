@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>图片轮播</title>
+</head>
+<link rel="stylesheet" href="../css/slide.css">
+<script src="../js/lib/jquery-1.8.3.min.js"></script>
+<script src="../js/lib/slide.js"></script>
+<script src="../js/lib/echarts.js"></script>
+
+<body>
+<div class="main">
+    <div class="mianc">
+
+        <div class="ck-slide">
+            <ul class="ck-slide-wrapper">
+                <li>
+                    <div id="jrsg1" style="width: 390px" >
+                        <div class="info" ><span style="margin-left:25px;">各区今日事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:" style="position:absolute; height: 200px;"><div id="chart1" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="jrsg2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区今日事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart11" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="jrsg3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区今日事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart12" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="jysg1" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区简易事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart2" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="jysg2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区简易事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart21" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="jysg3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区简易事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart22" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="srsg1" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区伤人事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart3" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="srsg2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区伤人事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart31" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="srsg3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区伤人事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart32" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swsg1" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart4" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swsg2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart41" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swsg3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡事故数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart42" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="ssrs1" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区受伤人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart5" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="ssrs2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区受伤人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart51" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="ssrs3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区受伤人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart52" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swrs1" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart6" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swrs2" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart61" class="chartpara"></div></a>
+                </li>
+                <li style="display:none">
+                    <div id="swrs3" style="width: 390px">
+                        <div class="info" ><span style="margin-left:25px;">各区死亡人数数据统计</span></div>
+                    </div>
+                    <a href="javascript:"><div id="chart62" class="chartpara"></div></a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+
+        </div>
+
+        <script>
+            $('.ck-slide').ckSlide({
+//                autoPlay: true,//默认为不自动播放，需要时请以此设置
+                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+                interval:2000//默认间隔2000毫秒
+            });
+
+            $('.ck-slide-wrapper').css('position','absolute').css('top','-50px');
+            $('.ck-slide-wrapper li:eq(2)').css('margin','');
+            setInterval(clickNext,2000);
+            function clickNext() {
+                $('.ctrl-slide.ck-next').click();
+            }
+        </script>
+    </div>
+</div>
+<script src="../js/tongji/quduanGraph.js"></script>
+
+</body>
+</html>

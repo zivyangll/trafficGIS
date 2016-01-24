@@ -1,0 +1,118 @@
+#timeline {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 375px;
+  height: 1000px;
+  background-color: white; }
+  #timeline .todayTime {
+    position: relative;
+    width: 100%;
+    height: 30px; }
+    #timeline .todayTime .timecircle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #2273b3;
+      border-radius: 10px;
+      top: 10px;
+      left: 71px; }
+    #timeline .todayTime .timecircle2 {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      top: 15px;
+      left: 76px; }
+    #timeline .todayTime .time {
+      position: absolute;
+      color: #2273b3;
+      font-size: 1.2em;
+      font-weight: bold;
+      top: 5px;
+      left: 100px; }
+  #timeline .tempTimeline {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden; }
+  #timeline .all {
+    width: 375px;
+    height: 400px; }
+    #timeline .all div {
+      float: left; }
+    #timeline .all .clocktime {
+      position: relative;
+      width: 75px;
+      height: 100%; }
+      #timeline .all .clocktime .time {
+        position: absolute;
+        width: 70px;
+        height: 25px;
+        background-color: #54c66a;
+        top: 13px;
+        left: 5px;
+        line-height: 25px;
+        text-align: center;
+        color: white;
+        font-weight: bold; }
+    #timeline .all .clockline {
+      position: relative;
+      width: 15px;
+      height: 100%; }
+      #timeline .all .clockline .circle {
+        position: absolute;
+        top: 20px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #54c66a;
+        z-index: 9; }
+      #timeline .all .clockline .line {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 2px;
+        height: 100%;
+        background-color: #dfe6ee; }
+    #timeline .all .jiantou {
+      width: 10px;
+      height: 100%;
+      position: relative; }
+      #timeline .all .jiantou .bot {
+        position: absolute;
+        border: solid 7px;
+        border-color: transparent #CCCCCC transparent transparent;
+        z-index: 99;
+        left: -3px;
+        top: 18px; }
+      #timeline .all .jiantou .top {
+        position: absolute;
+        border: solid 7px;
+        border-color: transparent #ffffff transparent transparent;
+        z-index: 99;
+        top: 18px;
+        left: -2px; }
+    #timeline .all .bubble {
+      width: 270px; }
+  #timeline .test {
+    width: 250px;
+    margin: 10px 0 10px 0;
+    padding: 1px 1px 1px 10px;
+    border: 1px solid #CCCCCC; }
+    #timeline .test .img img {
+      margin: 10px 0;
+      width: 240px; }
+    #timeline .test .title {
+      margin-top: 10px;
+      font-size: 0.9em;
+      line-height: 1.5em;
+      font-weight: bold; }
+    #timeline .test .content {
+      margin-bottom: 10px;
+      font-size: 0.7em;
+      line-height: 1.4em; }
+
+/*# sourceMappingURL=timeline.css.map */

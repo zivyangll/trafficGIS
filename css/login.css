@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	border:none;
+	margin :0px;
+	padding :0px;
+}
+body
+{
+	background-color:#2D92E0;
+}
+#tHeader
+{
+	background-color:#FFF;
+	height:108px;
+	position:relative;
+	z-index:10;
+}
+#logoImg
+{
+	position:absolute;
+	top:22px;
+}
+#mainPart,#logoPlaceHolder
+{
+	width:1020px;
+	margin:0 auto;
+}
+
+#rightMainPart
+{
+	float:right;
+	width:350px;
+	position:relative;
+}
+#photoSwitchBox
+{
+	width:620px;
+	float:left;
+
+}
+#photoPlaceHolder
+{
+/*	background:transparent rgb(0,0,51) no-repeat scroll 800px 200px;*/
+	position:relative;
+	overflow:visible;
+	z-index:1;
+	width:620px;
+	height:550px;
+}
+#dotSwitchBar
+{
+	height:10px;
+	z-index:101;
+	position:absolute;
+	top:510px;
+	right:10px;
+}
+#dotSwitchBar li
+{
+	float:left;
+	list-style:none;
+	cursor:pointer;
+}
+.dotSwitch
+{   width:10px;
+	height:10px;
+	display:block;
+	margin:0 10px;
+
+}
+.selectedDot{ background-image:url(../img/login/click.png);}
+.unselectedDot{ background-image:url(../img/login/nomal.png);}
+#LoginBox
+{
+	width:340px;
+	height:412px;
+	background-color:#FFF;
+	position:absolute;
+	top:70px;
+	z-index:100;
+}
+#LoginBoxLabel
+{
+	position:absolute;
+	top:40px;
+	font-family:"Microsoft YaHei";
+}
+
+#FormforLoginBtn
+{
+	width:290px;
+	height:45px;
+    margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+    text-align:center;
+}
+#FormforLoginBtn button
+{
+	width:100px;
+	height:45px;
+	border:0 none;
+	background:rgb(10,125,216);
+	color:#FFF;
+	font-size:18px;
+    margin:0px 20px;
+	font-family:'Microsoft YaHei';
+	cursor:pointer;
+}
+
+#idInputLFrame
+{
+	margin-bottom:30px;
+}
+#pwdInputFrame
+{
+	margin-bottom:25px;
+}
+
+.loginFormInput
+{
+	width:290px;
+	height:40px;
+	border:1px solid rgb(204,204,204);
+	background:rgb(255,255,255);
+	line-height:40px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:40px;
+}
+
+.loginformIpt
+{
+	position:absolute;
+	left:35px;
+	top:5px;
+	height:30px;
+	width:250px;
+	line-height:30px;
+	font-family:verdana;
+	border:none;
+}
+#infoInput
+{
+	margin:100px 0 0px;
+}
+.LoginImg
+{
+	position:absolute;
+	top:8px;
+	left:5px;
+}
+#userLoginLabel
+{
+	color:rgb(103,103,103);
+	font-size:1.5em;
+	margin-left:25px;
+}
+#forUserLoginLabel
+{
+	background-color:rgb(245,130,39);
+	width:3px;
+	height:30px;
+	float:left;
+}
+#menuPhotoChange
+{
+	position:absolute;
+	top:45px;
+}
+#mainPhotoChange
+{
+	position:absolute;
+	overflow:visible;
+	position:absolute;
+	bottom:0px;
+}
+
+#rememberPsw
+{
+	color:rgb(103,103,103);
+	font-size:0.9em;
+}
+#checkrememberUserBox
+{
+	margin-left:25px;
+}
+.contentPlaceHolder
+{
+	color:#FFF;
+	font-family:"Microsoft YaHei";
+	font-size:0.9em;
+	line-height:30px;
+	position:absolute;
+	top:120px;
+}
+

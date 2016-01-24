@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/dateRange.css"/>
+    <link href="../css/TrafficControl.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/lib/jquery.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HL35e1E12vh3KsAYwq2ijmtV"></script>
+    <script type="text/javascript" src="../js/lib/dateRange.js"></script>
+    <script type="text/javascript" src="../js/config.js"></script>
+    <script type="text/javascript" src="../js/map/TrafficControl.js"></script>
+    <script type="text/javascript" src="../js/map/Heatmap_min.js"></script>
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/fakeLoader.css">
+</head>
+<body>
+<div id="allmap"></div>
+<div id="heatLayer"></div>
+<div class="fakeloader"></div>
+<!--地图上所有浮层-->
+<div id="overMap">
+    <!-- 左上角的大菜单-->
+    <div id="leftTop">
+        <!-- 一级菜单-->
+        <div id="topMenu">
+            <div id="titleImage"></div>
+            <div class="layerbox usel zdeps-1">
+                <div class="tooldragbar tooldragup" style=""></div>
+                <div class="tooldragbar tooldragdown" style=""></div>
+                <div class="tooldragbar tooldragleft"></div>
+                <div class="tooldragbar tooldragright"></div>
+                <div id="layerbox">
+                    <div class="city-panel zdeps-2 usel"></div>
+                    <div class="layer_item tucengkongzhi">
+                        <span>图层控制</span>
+                    </div>
+                    <div class="layer_item shishilukuang">
+                        <img class="menuImg">
+                        <span>实时路况</span>
+                    </div>
+                    <div class="layer_item kongjianchaxun">
+                        <span>空间查询</span>
+                    </div>
+                    <div class="layer_item kongjianfenxi ">
+                        <span>空间分析</span>
+                    </div>
+                    <div class="layer_item dilibiaozhu ">
+                        <span>地理标注</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="leftContent">
+            <div id="layers">
+                <div id="allLayer">
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/1_n.png"><br/>
+                        <span>实有事故</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/2_n.png"><br/>
+                        <span>实有违法</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/3_n.png"><br/>
+                        <span>实有道路</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/4_n.png"><br/>
+                        <span>实有驾驶员</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/5_n.png"><br/>
+                        <span>实有车辆</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/6_n.png"><br/>
+                        <span>实有运输企业</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/7_n.png"><br/>
+                        <span>实有停车场</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/8_n.png"><br/>
+                        <span>实有交通设施</span>
+                    </div>
+                    <div class="oneLayer">
+                        <img src="../img/yitu/tuceng/9_n.png"><br/>
+                        <span>实有警力</span>
+                    </div>
+                </div>
+                <!--图层控制内容-->
+                <div id="tucengContent">
+                    <div class="selectTop">
+                        <p>请拖拽属性</p>
+                    </div>
+                    <div class="selectContent">
+                        <ul></ul>
+                    </div>
+                    <div id="selectResult" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div id="calPanel">
+                        <div class="ta_date" id="div_date_demo3">
+                            <span class="date_title" id="date_demo3"></span>
+                            <a class="opt_sel" id="input_trigger_demo3" href="#">
+                                <i class="i_orderd"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tucenglayerConfirm">
+                    <input id="tucengCancel" type="button" value="">
+                    <input id="tucengConfirm" type="button" value="">
+                </div>
+            </div>
+
+        </div>
+        <!-- 箭头-->
+        <div id="jiantou">
+            <div class="amap-panctrl amap-panctrl-down usel" style="display: block;">
+                <i class="fa fa-chevron-down iconfont">&#xe694;</i>
+            </div>
+        </div>
+    </div>
+    <div id="leftBottom"></div>
+    <!--用户信息-->
+    <div id="rightTop">
+        <div class="userImg"></div>
+        <div class="userInfo">
+            <div class="userName">杨龙龙</div>
+            <div class="userType">普通用户</div>
+        </div>
+    </div>
+    <!--三个主菜单  -->
+    <div id="rightMiddle">
+        <a href="./yitu.html">
+            <div class='rightMiddleTop'></div>
+        </a>
+        <a href="./yiku.html">
+            <div class='rightMiddleMid'></div>
+        </a>
+        <a href="./kaifa.html">
+            <div class='rightMiddleBot'></div>
+        </a>
+        <a href="./jinri.html">
+            <div class='rightMiddleBotBot'></div>
+        </a>
+    </div>
+    <!--全屏按钮 -->
+    <!--<div id="quanping">-->
+    <!--<img src="../img/yitu/tool/qp.png"/>-->
+    <!--</div>-->
+    <div id="rightBotttom"></div>
+</div>
+<div id="tucengkongzhiPanel" style="display: none">
+</div>
+
+<!--趋势分析-->
+<div id="qushi">
+    <div id="qushiTitle" class="dialog-title">
+        <span>趋势图分析</span>
+
+        <div class="qushiImg"></div>
+    </div>
+    <div id="qushiGraph">
+        <iframe id="qushiGraphIframe" src="./qushifenxiIframe.html" width="100%" height="100%" frameborder="0"
+                scrolling="no"></iframe>
+    </div>
+</div>
+</body>
+<script src="../js/baidumap.js"></script>
+<script src="../js/yitu/yitu.js"></script>
+<script src="../js/yitu/tuceng.js"></script>
+<script src="../js/yitu/ajax.js"></script>
+<script src="../js/yitu/dragDiv.js"></script>
+<script src="../js/fakeLoader.min.js"></script>
+
+</html>
